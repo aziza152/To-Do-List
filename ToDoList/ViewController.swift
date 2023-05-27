@@ -18,22 +18,42 @@ class ViewController: UIViewController {
     }
     
     @IBAction func addtask(_ sender: Any) {
-        
         let defaults = UserDefaults.standard
         
-        let taskName = textfield.text
-        var taskarray: [String] = []
+        let taskName = textfield.text!
         
-        if let array = defaults.array(forKey: "taskArray") {
-            taskarray = array as! [String]
-            taskarray.append (taskName)?
-            defaults.set(array, forKey: "taskArray")
+        var newTask = TaskItem()
+        
+        newTask.name = taskName
+        
+        var taskarray: [TaskItem] = []
+        
+        
+        
+        
+        
+        
+        if let array = defaults.array(forKey: "taskItemArray") {
+            taskarray = array as! [TaskItem]
+            taskarray.append(newTask)
+            defaults.set(taskarray, forKey: "taskItemArray")
+        }
+        else {
+            let array = [newTask]
+            defaults.set(taskarray, forKey: "taskItemArray")
         }
         
-        
-        let array = [taskName]
-        
-        defaults.set(array, forKey: "taskArray")
-    }
+//        var taskarray: [String] = []
+//
+//        if let array = defaults.array(forKey: "taskArray") {
+//            taskarray = array as! [String]
+//            taskarray.append (taskName)
+//            defaults.set(taskarray, forKey: "taskArray")
+//        } else {
+//            let array = [taskName]
+//            defaults.set(array, forKey: "taskArray")
+//    }
+    textfield.text = ""
+}
 }
 

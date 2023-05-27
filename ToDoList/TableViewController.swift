@@ -8,7 +8,7 @@
 import UIKit
 
 class TableViewController: UITableViewController {
-
+    
     var arraytask = ["123", "456"]
     
     override func viewDidLoad() {
@@ -24,9 +24,16 @@ class TableViewController: UITableViewController {
         let defaults = UserDefaults.standard
         if let array = defaults.array(forKey: "taskArray") {
             arraytask = array as! [String]
-    }
+        }
         tableView.reloadData()
     }
+    
+    func saveTask() {
+        let defaults = UserDefaults.standard
+            defaults.set (arraytask, forKey: "taskArray")
+    }
+
+
 
     // MARK: - Table view data source
 
@@ -60,17 +67,17 @@ class TableViewController: UITableViewController {
     }
     */
 
-    /*
+   
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            // Delete the row from the data source
+            arraytask.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.

@@ -17,6 +17,7 @@
 		CD50C0B62A1C74E3002FD233 /* ToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD50C0B52A1C74E3002FD233 /* ToDoListUITests.swift */; };
 		CD50C0B82A1C74E3002FD233 /* ToDoListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD50C0B72A1C74E3002FD233 /* ToDoListUITestsLaunchTests.swift */; };
 		CD50C0C52A1C76EA002FD233 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD50C0C42A1C76EA002FD233 /* TableViewController.swift */; };
+		CD50C1032A1F6C4E002FD233 /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD50C1022A1F6C4E002FD233 /* TaskItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		CD50C0B52A1C74E3002FD233 /* ToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITests.swift; sourceTree = "<group>"; };
 		CD50C0B72A1C74E3002FD233 /* ToDoListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CD50C0C42A1C76EA002FD233 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		CD50C1022A1F6C4E002FD233 /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				CD50C0942A1C74E1002FD233 /* AppDelegate.swift */,
 				CD50C0962A1C74E1002FD233 /* SceneDelegate.swift */,
 				CD50C0C42A1C76EA002FD233 /* TableViewController.swift */,
+				CD50C1022A1F6C4E002FD233 /* TaskItem.swift */,
 				CD50C0982A1C74E1002FD233 /* ViewController.swift */,
 				CD50C09A2A1C74E1002FD233 /* Main.storyboard */,
 				CD50C09D2A1C74E2002FD233 /* Assets.xcassets */,
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD50C0992A1C74E1002FD233 /* ViewController.swift in Sources */,
+				CD50C1032A1F6C4E002FD233 /* TaskItem.swift in Sources */,
 				CD50C0952A1C74E1002FD233 /* AppDelegate.swift in Sources */,
 				CD50C0972A1C74E1002FD233 /* SceneDelegate.swift in Sources */,
 				CD50C0C52A1C76EA002FD233 /* TableViewController.swift in Sources */,
