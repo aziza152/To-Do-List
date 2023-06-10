@@ -30,6 +30,9 @@ class TableViewController: UITableViewController {
     
     func saveTask() {
         let defaults = UserDefaults.standard
+//        let taskArray = arraytask.map { taskItem -> [String: Any] in
+//            return ["name": TaskItem(), "isComplete": TaskItem()]
+//        }
             defaults.set (arraytask, forKey: "taskArray")
     }
 
